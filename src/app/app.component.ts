@@ -8,6 +8,4 @@ import { MainComponent } from './layout/main/main.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'todo-list';
-}
+export class AppComponent {}
