@@ -1,0 +1,9 @@
+<section class="section">
+  <span class="section__title">Categorias</span>
+
+  <ul class="list">
+    @for (category of categories(); track category.id) {
+      <li class="list__item">{{ category.name }}</li>
+    }
+  </ul>
+</section>

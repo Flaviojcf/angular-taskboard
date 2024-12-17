@@ -1,0 +1,26 @@
+.section {
+    margin-top: 64px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-left: 2rem;
+
+    &__title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    list-style: none;
+    gap: 1rem;
+
+    &__item {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 500;
+    }
+}

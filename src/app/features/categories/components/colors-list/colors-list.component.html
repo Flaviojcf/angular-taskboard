@@ -1,0 +1,9 @@
+<section class="section">
+  <mat-divider class="divider" />
+
+  <div class="section__colors">
+    @for (category of categories(); track category.id) {
+      <span class="section__span" [ngClass]="category.color">{{ category.name }} </span>
+    }
+  </div>
+</section>
