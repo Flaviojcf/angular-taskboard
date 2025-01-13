@@ -1,0 +1,9 @@
+<div class="section">
+  <app-include-task-form
+    class="section__form"
+    (colorChange)="handleColorChange($event)"></app-include-task-form>
+
+  <div class="section__button">
+    <span class="section__span" [style.backgroundColor]="selectedColor"></span>
+  </div>
+</div>

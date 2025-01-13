@@ -1,0 +1,9 @@
+.form {
+    display: flex;
+    gap: 0.5rem;
+    user-select: none;
+
+    &__tasks {
+        width: 100%; 
+    }
+}

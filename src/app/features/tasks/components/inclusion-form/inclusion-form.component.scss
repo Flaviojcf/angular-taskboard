@@ -1,0 +1,24 @@
+.section {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0.5rem;
+
+    &__form {
+        grid-column: span 11 / span 11;
+    }
+
+    &__button {
+        grid-column: span 1 / span 1;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 0.5rem;
+    }
+
+    &__span {
+        border-radius: 9999px;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: #1d4ed8;
+    }
+}
