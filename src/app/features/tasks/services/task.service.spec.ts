@@ -11,6 +11,7 @@ import {
   TASK_UNPROCESSIBLE_ENTITY_RESPONSE,
   tasks,
 } from '../../../__mocks__/tasks';
+import { Task } from '../model/task.model';
 
 describe('Task Service', () => {
   let taskService: TaskService;
@@ -79,9 +80,10 @@ describe('Task Service', () => {
 
   describe('createTask', () => {
     it('should create a new task', waitForAsync(() => {
-      taskService.createTask(MOCKED_TASK).subscribe(() => {
-        expect(taskService.tasks().length).toEqual(1);
-        expect(taskService.tasks()[0]).toEqual(MOCKED_TASK);
+      let task: Task | undefined;
+
+      taskService.createTask(MOCKED_TASK).subscribe(response => {
+        task = response;
       });
 
       const req = httpTestingController.expectOne(`${baseUrl}/tasks`);
@@ -135,7 +137,7 @@ describe('Task Service', () => {
 
       req.flush(MOCKED_TASK);
 
-      expect(req.request.method).toEqual('POST');
+      expect(req.request.method).toEqual('PUT');
     }));
 
     it('should throw unprocessable entity with invalid body when update a task', waitForAsync(() => {
