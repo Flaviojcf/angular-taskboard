@@ -17,4 +17,6 @@ export class CategoryService {
   public categories = toSignal(this.categories$, {
     initialValue: [] as Category[],
   });
+
+  public selectedCategoryId = signal('1');
 }

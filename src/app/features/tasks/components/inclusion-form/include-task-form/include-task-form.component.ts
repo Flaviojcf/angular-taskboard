@@ -24,17 +24,9 @@ const MODULES = [
 export class IncludeTaskFormComponent {
   private readonly categoryService = inject(CategoryService);
   public readonly categories = this.categoryService.categories;
-  @Output() colorChange = new EventEmitter<string>();
 
   public selectionChangeHandler(event: MatSelectChange): void {
     const categoryId = event.value;
-
-    const selectedCategory = this.categoryService
-      .categories()
-      .find(category => category.id === categoryId);
-
-    if (selectedCategory) {
-      this.colorChange.emit(selectedCategory.color);
-    }
+    this.categoryService.selectedCategoryId.set(categoryId);
   }
 }
