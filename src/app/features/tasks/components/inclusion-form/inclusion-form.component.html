@@ -4,6 +4,10 @@
   <div class="section__button">
     <span
       class="section__span"
+      [ngClass]="{
+        'section__span--isLoading': taskService.isLoadingTask(),
+        'section__span--notLoading': !taskService.isLoadingTask(),
+      }"
       [style.backgroundColor]="colorVariants[selectedCategoryId()]"></span>
   </div>
 </div>

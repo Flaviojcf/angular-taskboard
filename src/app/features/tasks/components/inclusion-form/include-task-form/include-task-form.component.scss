@@ -4,6 +4,26 @@
     user-select: none;
 
     &__tasks {
-        width: 100%; 
+        width: 100%;
+    }
+
+    &__isLoading {
+        cursor: not-allowed;
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    &__notLoading {
+        cursor: pointer;
+    }
+
+    @keyframes pulse {
+        0%,
+        100% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
     }
 }

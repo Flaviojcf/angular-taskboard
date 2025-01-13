@@ -1,4 +1,11 @@
-<form class="form" autocomplete="off" [formGroup]="newTaskForm">
+<form
+  class="form"
+  autocomplete="off"
+  [formGroup]="newTaskForm"
+  [ngClass]="{
+    'form__isLoading': isIncludeTaskFormDisabled(),
+    'form__notLoading': isIncludeTaskFormDisabled(),
+  }">
   <mat-form-field class="form__tasks">
     <mat-label>Tarefa</mat-label>
     <input
