@@ -3,14 +3,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectChange, MatSelectModule } from '@angular/material/select';
-import { CategoryService } from '../../../../categories/services/category.service';
-import { createTaskForm } from '../../../constants/create-task-form.component';
-import { Task } from '../../../model/task.model';
-import { TaskService } from '../../../services/task.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { delay, finalize } from 'rxjs';
 import { CommonModule } from '@angular/common';
-import { SnackBarService } from '../../../../../shared/services/snack-bar.service';
+import { SnackBarService } from '@shared/snack-bar.service';
+import { CategoryService } from '@categoryService/category.service';
+import { TaskService } from '@taskService/task.service';
+import { createTaskForm } from '@taskConstants/create-task-form.component';
+import { Task } from '@taskModel/task.model';
 
 const MODULES = [
   ReactiveFormsModule,

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InclusionFormComponent } from '../../components/inclusion-form/inclusion-form.component';
+import { InclusionFormComponent } from '@taskComponents/inclusion-form/inclusion-form.component';
 
 const COMPONENTS = [InclusionFormComponent];
 @Component({

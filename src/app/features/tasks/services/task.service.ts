@@ -1,7 +1,7 @@
-import { Task } from './../model/task.model';
 import { HttpClient } from '@angular/common/http';
 import { computed, inject, Injectable, signal } from '@angular/core';
-import { environment } from '../../../../environments/environment';
+import { environment } from '@environment/environment';
+import { Task } from '@taskModel/task.model';
 import { Observable, tap } from 'rxjs';
 
 @Injectable({
