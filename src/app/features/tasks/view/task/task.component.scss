@@ -11,4 +11,10 @@
         line-height: 2rem;
         font-weight: 600;
     }
+
+    &__tasks {
+        display: flex;
+        margin-top: 32px;
+        flex-direction: column;
+    }
 }

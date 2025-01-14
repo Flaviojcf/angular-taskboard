@@ -1,0 +1,36 @@
+.section {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 8px 12px;
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__void {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140px;
+    }
+}
+
+.input {
+    outline: none;
+    width: 90%;
+    border: none;
+    background-color: lightgray;
+    padding: 4px 12px;
+    border-radius: 4px;
+}

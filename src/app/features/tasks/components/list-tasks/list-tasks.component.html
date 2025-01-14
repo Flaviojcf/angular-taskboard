@@ -1,0 +1,24 @@
+<div class="section">
+  @if (tasksQuantity() === 0) {
+    <div class="task__void">
+      <p>Nenhuma atividade adicionada...</p>
+    </div>
+  }
+  @for (task of tasks(); track task.id) {
+    <div
+      class="task"
+      [matBadge]="initialLetterOfCategory(task.categoryId)"
+      matBadgeOverlap="true"
+      [style.borderColor]="colorVariants[task.categoryId]"
+      [ngStyle]="{
+        '--mat-badge-background-color': colorVariants[task.categoryId],
+      }">
+      <mat-checkbox
+        class="example-margin"
+        [checked]="task.isCompleted"
+        (click)="handleCompleteTask(task.id)"></mat-checkbox>
+      <input class="input" type="text" [value]="task.title" />
+      <div class="task__actions" (click)="openDialog(task.title)">❌</div>
+    </div>
+  }
+</div>

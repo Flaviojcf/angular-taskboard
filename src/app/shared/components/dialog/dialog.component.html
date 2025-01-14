@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>{{ data.title }}</h2>
+<mat-dialog-content
+  >{{ data.content }} <strong class="bold">'{{ data.self }}' </strong>?
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button type="button" mat-button mat-dialog-close>Não</button>
+  <button type="button" mat-button mat-dialog-close cdkFocusInitial>Sim</button>
+</mat-dialog-actions>

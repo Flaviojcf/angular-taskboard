@@ -64,12 +64,12 @@ export class IncludeTaskFormComponent {
     const newTask: Partial<Task> = {
       title,
       categoryId,
-      isCompleted: true,
+      isCompleted: false,
     };
     this.taskService
       .createTask(newTask)
       .pipe(
-        delay(4000),
+        // delay(4000),
         finalize(() => this.taskService.isLoadingTask.set(false)),
         takeUntilDestroyed(this.destroy$)
       )
@@ -80,9 +80,10 @@ export class IncludeTaskFormComponent {
         },
         complete: () => this.snackBarConfigHandler('Tarefa Incluída'),
       });
+    this.newTaskForm.reset();
   }
 
   public snackBarConfigHandler(message: string): void {
-    this.snackBarService.showSnackBar(message, 4000, 'end', 'top');
+    this.snackBarService.showSnackBar(message, 2000, 'end', 'top');
   }
 }
