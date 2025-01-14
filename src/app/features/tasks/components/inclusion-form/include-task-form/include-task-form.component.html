@@ -3,11 +3,11 @@
   autocomplete="off"
   [formGroup]="newTaskForm"
   [ngClass]="{
-    'form__isLoading': isIncludeTaskFormDisabled(),
-    'form__notLoading': isIncludeTaskFormDisabled(),
+    form__isLoading: isIncludeTaskFormDisabled(),
+    form__notLoading: isIncludeTaskFormDisabled(),
   }">
   <mat-form-field class="form__tasks">
-    <mat-label>Tarefa</mat-label>
+    <mat-label data-testid="titleLabel">Tarefa</mat-label>
     <input
       formControlName="title"
       matInput
@@ -17,7 +17,7 @@
   </mat-form-field>
 
   <mat-form-field>
-    <mat-label>Categoria</mat-label>
+    <mat-label data-testid="categoryIdLabel">Categoria</mat-label>
     <mat-select
       formControlName="categoryId"
       (selectionChange)="selectionChangeHandler($event)"

@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { computed, inject, Injectable, signal } from '@angular/core';
-import { environment } from '@environment/environment';
-import { Task } from '@taskModel/task.model';
+
 import { Observable, tap } from 'rxjs';
+import { environment } from '../../../../environments/environment';
+import { Task } from '../model/task.model';
 
 @Injectable({
   providedIn: 'root',
@@ -36,7 +37,6 @@ export class TaskService {
   public updateTask(updatedTask: Task): Observable<Task> {
     return this._httpClient
       .put<Task>(`${this._apiUrl}/tasks/${updatedTask.id}`, updatedTask)
-
       .pipe(tap(task => this.updateATaskInTheTasksList(task)));
   }
 

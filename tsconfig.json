@@ -23,17 +23,6 @@
       "ES2022",
       "dom"
     ],
-    "paths": {
-      "@shared/*" : ["./src/app/shared/services/*"],
-      "@categoryService/*" : ["./src/app/features/categories/services/*"],
-      "@taskService/*" : ["./src/app/features/tasks/services/*"],
-      "@categoryComponents/*" : ["./src/app/features/categories/components/*"],
-      "@taskComponents/*" : ["./src/app/features/tasks/components/*"],
-      "@taskConstants/*" : ["./src/app/features/tasks/constants/*"],
-      "@categoryConstants/*" : ["./src/app/features/categories/constants/*"],
-      "@taskModel/*" : ["./src/app/features/tasks/model/*"],
-      "@environment/*": ["./src/environments/*"]
-    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

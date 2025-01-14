@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { CommonModule } from '@angular/common';
-import { CategoryService } from '@categoryService/category.service';
+import { CategoryService } from '../../services/category.service';
 
 const MODULES = [MatDividerModule, CommonModule];
 

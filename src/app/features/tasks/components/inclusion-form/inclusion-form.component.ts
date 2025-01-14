@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { IncludeTaskFormComponent } from './include-task-form/include-task-form.component';
 import { CommonModule } from '@angular/common';
-import { CategoryService } from '@categoryService/category.service';
-import { TaskService } from '@taskService/task.service';
-import { categoryIdBackgroundColors } from '@categoryConstants/category-color';
+import { categoryIdBackgroundColors } from '../../../categories/constants/category-color';
+import { CategoryService } from '../../../categories/services/category.service';
+import { TaskService } from '../../services/task.service';
 
 const COMPONENTS = [IncludeTaskFormComponent];
 const MODULES = [CommonModule];
