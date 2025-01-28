@@ -3,10 +3,12 @@
     flex-direction: column;
     margin-left: 10rem;
     margin-right: 10rem;
-    margin-top: 8px;
+    margin-top: 24px;
 
 
     &__title {
+        display: flex;
+        justify-content: center;
         font-size: 1.5rem;
         line-height: 2rem;
         font-weight: 600;

@@ -16,6 +16,7 @@
       <mat-checkbox
         class="example-margin"
         [checked]="task.isCompleted"
+        [style.color]="colorVariants[task.categoryId]"
         (click)="handleCompleteTask(task.id)"></mat-checkbox>
       <input class="input" type="text" [value]="task.title" />
       <div class="task__actions" (click)="openDialog(task.title)">❌</div>
