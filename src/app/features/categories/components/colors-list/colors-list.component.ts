@@ -7,7 +7,6 @@ const MODULES = [MatDividerModule, CommonModule];
 
 @Component({
   selector: 'app-colors-list',
-  standalone: true,
   imports: [...MODULES],
   templateUrl: './colors-list.component.html',
   styleUrl: './colors-list.component.scss',

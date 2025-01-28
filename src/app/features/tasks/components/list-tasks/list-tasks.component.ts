@@ -11,7 +11,6 @@ const MODULES = [MatCheckboxModule, MatBadgeModule, CommonModule];
 
 @Component({
   selector: 'app-list-tasks',
-  standalone: true,
   imports: [...MODULES],
   templateUrl: './list-tasks.component.html',
   styleUrl: './list-tasks.component.scss',

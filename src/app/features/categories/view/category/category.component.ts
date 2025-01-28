@@ -6,7 +6,6 @@ const COMPONENTS = [MainListComponent, ColorsListComponent];
 
 @Component({
   selector: 'app-category',
-  standalone: true,
   imports: [...COMPONENTS],
   templateUrl: './category.component.html',
   styleUrl: './category.component.scss',

@@ -3,7 +3,6 @@ import { MainComponent } from './layout/main/main.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [MainComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

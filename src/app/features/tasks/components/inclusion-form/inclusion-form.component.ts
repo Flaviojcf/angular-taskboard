@@ -9,7 +9,6 @@ const COMPONENTS = [IncludeTaskFormComponent];
 const MODULES = [CommonModule];
 @Component({
   selector: 'app-inclusion-form',
-  standalone: true,
   imports: [...COMPONENTS, ...MODULES],
   templateUrl: './inclusion-form.component.html',
   styleUrl: './inclusion-form.component.scss',

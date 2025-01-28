@@ -6,7 +6,6 @@ import { ListTasksComponent } from '../../components/list-tasks/list-tasks.compo
 const COMPONENTS = [InclusionFormComponent];
 @Component({
   selector: 'app-task',
-  standalone: true,
   imports: [...COMPONENTS, IncludeTaskFormComponent, ListTasksComponent],
   templateUrl: './task.component.html',
   styleUrl: './task.component.scss',

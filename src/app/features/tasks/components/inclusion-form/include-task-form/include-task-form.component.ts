@@ -22,7 +22,6 @@ const MODULES = [
 
 @Component({
   selector: 'app-include-task-form',
-  standalone: true,
   imports: [...MODULES],
   templateUrl: './include-task-form.component.html',
   styleUrl: './include-task-form.component.scss',
