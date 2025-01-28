@@ -78,7 +78,7 @@ export class IncludeTaskFormComponent {
         error: error => {
           this.snackBarConfigHandler(error.message);
         },
-        complete: () => this.snackBarConfigHandler('Tarefa Incluída'),
+        complete: () => this.snackBarConfigHandler('Tarefa incluída'),
       });
     this.newTaskForm.reset();
   }

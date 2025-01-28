@@ -91,7 +91,7 @@ describe('IncludeTaskFormComponent', () => {
 
       component.snackBarConfigHandler(message);
 
-      expect(showSnackBarSpy).toHaveBeenCalledWith(message, 4000, 'end', 'top');
+      expect(showSnackBarSpy).toHaveBeenCalledWith(message, 2000, 'end', 'top');
     });
   });
 
